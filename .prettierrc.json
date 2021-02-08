@@ -1,0 +1,6 @@
+semi: false
+quoteProps: "as-needed"
+trailingComma: "all"
+bracketSpacing: false
+jsxBracketSameLine: true
+parser: "babel-flow"
