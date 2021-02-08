@@ -1,5 +1,5 @@
 
-WHAT IS XREF?
+WHAT IS XREF
 =============
 
 XRef is a set of tools to work with PHP source files. Currently it includes:
@@ -72,23 +72,21 @@ xref-lint --init
 This will create a xref data directory (.xref), default config file (.xref/xref.ini) and
 will index files for faster checks.
 
-
-1.  Edit the config file (.xref/xref.ini). See section CONFIG FILE below;
+1. Edit the config file (.xref/xref.ini). See section CONFIG FILE below;
     also see sample config in examples/xref.ini.sample
 
-2.  [If installed via Composer, Smarty will be installed as dependency and the step is not needed]
+2. [If installed via Composer, Smarty will be installed as dependency and the step is not needed]
     Download and install Smarty template engine. <http://www.smarty.net/>;
     any of versions 2.x or 3.x should work, version 2 takes less memory.
     Set the path to Smarty.class.php file in *xref.smarty-class* param of config file.
 
-3.  [The step is optional]
+3. [The step is optional]
     Configure web server to run scripts from web-scripts dir XRef/web-scripts/,
     see sample Apache config file in examples/httpd.conf. To view where
     examples and web-scripts are intalled, run 'xref-lint --help'.
 
 4. Set up crontab to run xref-ci to monitor your project,
     see sample cronab script in examples/ci.crontab
-
 
 REPORTED ERRORS
 ===============
@@ -272,7 +270,6 @@ REPORTED ERRORS
     If you get warnings about a lower-case constant defined somewhere else, you can disable the warning
     listing the constant in lint.add-constant setting (see below).
 
-
 * <a name="xr022"> **Possible use of class constant without class prefix (%s)** (severity: warning, code: xr022)
 
     Sample code:
@@ -341,7 +338,6 @@ class Foo {
 
     Similar to **xr032** and **xr033**, caused by use any of class-context keywords (self::, parent:: or static::)
     in global scope
-
 
 * <a name="xr041"></a> **Assignment in conditional expression (%s)** (severity: warning, code: xr041)
 
@@ -539,6 +535,7 @@ CONFIG FILE
 ===========
 
 XRef tools will look for the config file in the following places in order:
+
 * path set by command-line options -c (--config), affects command-line scripts only
 * environment variable XREF\_CONFIG
 * file .xref/xref.ini in the current directory, or in any of it's parent directories
@@ -552,7 +549,7 @@ Each of the value below can be overridden by command-line option -d (--define), 
 xref-lint -d lint.check-global-scope=false -d lint.ignore-error=xr010 ...
 ```
 
-List of config file parameters:
+List of config file parameters
 ------------------------------
 
 * **project.name** (string; optional)
@@ -708,7 +705,6 @@ List of config file parameters:
         to[] = you@your.domain
         to[] = "{%ae}"
 
-
 HOW TO EXTEND THE XREF
 ======================
 
@@ -734,7 +730,6 @@ determines which plugin to load for any of action. So, here is the checklist:
     doc.parsers[], doc.plugins[], xref.storage-manager and
     ci.source-code-manager.
 
-
 AUTHOR
 ======
 
@@ -743,6 +738,4 @@ Igor Gariev <gariev@hotmail.com>
 Contributors
 ------------
 
-Tim Otten https://github.com/totten
-
-
+Tim Otten <https://github.com/totten>
