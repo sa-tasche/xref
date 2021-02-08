@@ -1,3 +1,8 @@
+// Copyright © 2021 Sara Tasche <mitgedanken>
+//
+// Licensed under the ISC License;
+// you may not use this file except in compliance with the License.
+
 <?php
 
 $includeDir = ("@php_dir@" == "@"."php_dir@") ? dirname(__FILE__) . "/.." : "@php_dir@/XRef";

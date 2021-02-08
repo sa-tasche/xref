@@ -1,9 +1,8 @@
 <?php
-/**
-* @author Igor Gariev <gariev@hotmail.com>
-* @copyright Copyright (c) 2013 Igor Gariev
-* @licence http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
-*/
+// Copyright © 2021 Sara Tasche <mitgedanken>
+//
+// Licensed under the ISC License;
+// you may not use this file except in compliance with the License.
 
 
 //
